@@ -1,6 +1,7 @@
 async function loadPlayerData() {
   
-  let username = document.querySelector('#textbod').value;
+  var username = document.querySelector('#textbod').value;
+
   console.log(username);
   const url = "https://cors-anywhere.com/https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=".concat(username);
   console.log(url);
@@ -42,13 +43,6 @@ async function loadPlayerData() {
   } catch (error) {
     console.error(error.message);
   }
-}
-
-function getPlayerName(){
-  
-  var playerName = document.getElementById("submitPlayerName").value;
-  return playerName;
-  
 }
 
 
