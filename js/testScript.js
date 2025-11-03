@@ -10,4 +10,7 @@ function submitPlayerName(){
     loadPlayerData(playerName);
     }
 
+    document.getElementById("submitPlayerName").reset();
+
+
 }

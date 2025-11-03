@@ -37,6 +37,8 @@ async function loadPlayerData(username) {
     document.getElementById("constructionLevel").innerText=result.skills[23].level;
     document.getElementById("totalLevel").innerText=result.skills[0].level;
 
+    document.getElementById("playerName").innerText=result.name;
+    document.getElementById("totalXP").innerText=result.skills[0].xp;
 
   } catch (error) {
     console.error(error.message);

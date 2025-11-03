@@ -40,9 +40,9 @@
     </header>
     </div>
 
-    <div id="mainDiv">
+    <div id="mainTab1" class="mainDiv">
 
-        <table id="bodyTable">
+        <table class="bodyTable">
             <!-- two table rows, one for the img+overall scores, the other for the 23 skill subtable-->
             <!-- the first row contains one cell for image, and the other for subtable for 3 gen info-->
 
@@ -51,13 +51,13 @@
                 <td>
                     <table id="generalSubtable">
                         <tr>
-                            <td>Name</td>
+                            <td><span class="overallTitle">Name: </span><span id="playerName"></span></td>
                         </tr>
                         <tr>
-                            <td>Total Level: </td>
+                            <td><span class="overallTitle">Total Level: </span><span id="totalLevel"></span></td>
                         </tr>
                         <tr>
-                            <td>Total XP: </td>
+                            <td><span class="overallTitle">XP: </span><span id="totalXP"></span></td>
                         </tr>
 
                     </table>
@@ -115,7 +115,7 @@
                         <tr id="skillRow">
                             <td class="skillCell"><img src="images/Construction icon.png"><span class="skillTitle">Construction: </span><span id="constructionLevel"></span></td>
                             <td class="skillCell"><img src="images/Hunter icon.png"><span class="skillTitle">Hunter: </span><span id="hunterLevel"></span></td>
-                            <td class="skillCell"><img src="images/Skills icon.png"><span class="skillTitle">Total Level: </span><span id="totalLevel"></span></td>
+                            <td class="skillCell"><img src="images/Skills icon.png"><span class="skillTitle">Total Level: </span><span class="totalLevel"></span></td>
                         </tr>
                     </table>
                 </td>
@@ -126,5 +126,31 @@
 
         </table>
     </div>
+
+    <!-- TODO: 
+    -activity information
+    -add multiple "tabs" to the single webpage to avoid having to reload stats when swapping between tabs
+    -put each "tab" in a div, only show one at a time? rest are hidden
+    -->
+
+    <div id="mainTab2" class="mainDiv">
+
+        <table class="bodyTable">
+            <tr>
+                <th colspan="3">Test Table Header</th>
+                <td>Test Cell 1</td>
+                <td>Test Cell 2</td>
+                <td>Test Cell 3</td>
+            </tr>
+            <tr>
+                <th colspan="">Another Test Table Header</th>
+                <td>Test Cell 4</td>
+                <td>Test Cell 5</td>
+                <td>Test Cell 6</td>
+            </tr>
+        </table>
+
+    </div>
+    
 </body>
 </html>
